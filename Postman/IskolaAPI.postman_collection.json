@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "850dad39-22d9-4b77-b406-45e84cb37864",
+		"name": "IskolaAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Diakok",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{DiakokURL}}",
+					"host": [
+						"{{DiakokURL}}"
+					]
+				},
+				"description": "Diákok adatait jeleníti meg."
+			},
+			"response": []
+		},
+		{
+			"name": "Reszletek",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{DiakokURL}}/Reszletek/{{id}}",
+					"host": [
+						"{{DiakokURL}}"
+					],
+					"path": [
+						"Reszletek",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{DiakokURL}}/Count",
+					"host": [
+						"{{DiakokURL}}"
+					],
+					"path": [
+						"Count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Avg",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{DiakokURL}}/Avg",
+					"host": [
+						"{{DiakokURL}}"
+					],
+					"path": [
+						"Avg"
+					]
+				},
+				"description": "Érdemjegyek átlaga"
+			},
+			"response": []
+		},
+		{
+			"name": "GroupBy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{DiakokURL}}/GroupBy",
+					"host": [
+						"{{DiakokURL}}"
+					],
+					"path": [
+						"GroupBy"
+					]
+				},
+				"description": "Érdemjegyek alapján csoportosítás"
+			},
+			"response": []
+		},
+		{
+			"name": "Elegtelen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{DiakokURL}}/Elegtelen",
+					"host": [
+						"{{DiakokURL}}"
+					],
+					"path": [
+						"Elegtelen"
+					]
+				},
+				"description": "Elégtelen érdemjegyű diákok e-mail címe."
+			},
+			"response": []
+		},
+		{
+			"name": "Letrehozas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nev\": \"Boros Bence\",\r\n    \"email\": \"bence@vasvari.org\",\r\n    \"erdemjegy\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{DiakokURL}}",
+					"host": [
+						"{{DiakokURL}}"
+					]
+				},
+				"description": "Új diák létrehozása"
+			},
+			"response": []
+		},
+		{
+			"name": "Frissites",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 22,\r\n    \"nev\": \"Boros Bence\",\r\n    \"email\": \"bence@vasvari.org\",\r\n    \"erdemjegy\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{DiakokURL}}/22",
+					"host": [
+						"{{DiakokURL}}"
+					],
+					"path": [
+						"22"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "DiakokURL",
+			"value": "http://localhost:5000/api/Diakok"
+		},
+		{
+			"key": "id",
+			"value": "21"
+		}
+	]
+}

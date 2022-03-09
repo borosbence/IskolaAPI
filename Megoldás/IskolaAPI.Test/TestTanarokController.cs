@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace IskolaAPI.Test
 {
     [TestClass]
-    public class TestProductController
+    public class TestTanarokController
     {
         private TanarokController controller = new TanarokController(new iskolaContext());
         private tanarok GetPeldaTanar()

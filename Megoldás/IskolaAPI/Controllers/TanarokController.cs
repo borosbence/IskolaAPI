@@ -77,6 +77,12 @@ namespace IskolaAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<tanarok>> Posttanarok(tanarok tanarok)
         {
+            var letezoEmail = await _context.tanarok.AnyAsync(x => x.email == tanarok.email);
+            if (letezoEmail)
+            {
+                return Conflict("Ezzel az e-mail címmel már létezik diák.");
+            }
+
             _context.tanarok.Add(tanarok);
             await _context.SaveChangesAsync();
 

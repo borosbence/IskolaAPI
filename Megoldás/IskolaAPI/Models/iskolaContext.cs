@@ -18,6 +18,8 @@ namespace IskolaAPI.Models
         }
 
         public virtual DbSet<diakok> diakok { get; set; }
+        public virtual DbSet<tanarok> tanarok { get; set; }
+        public virtual DbSet<vezetoseg> vezetoseg { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

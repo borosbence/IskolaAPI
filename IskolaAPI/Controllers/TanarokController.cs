@@ -77,8 +77,15 @@ namespace IskolaAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<tanarok>> Posttanarok(tanarok tanarok)
         {
-            _context.tanarok.Add(tanarok);
-            await _context.SaveChangesAsync();
+            try
+            {
+                _context.tanarok.Add(tanarok);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateException ex)
+            {
+                return Conflict(ex.Message);
+            }
 
             return CreatedAtAction("Gettanarok", new { id = tanarok.id }, tanarok);
         }

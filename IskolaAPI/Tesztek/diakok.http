@@ -1,0 +1,37 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@diakok = http://localhost:5000/api/diakok
+
+GET {{diakok}}
+
+###
+
+GET {{diakok}}/1
+
+###
+
+POST {{diakok}}
+Content-Type: application/json
+
+{
+  "nev": "Teszt Elek",
+  "email" : "elek@teszt.hu",
+  "erdemjegy" : 3
+}
+
+###
+
+PUT {{diakok}}/19
+Content-Type: application/json
+
+{
+  "nev": "Teszt Elek",
+  "email" : "elek@teszt.hu",
+  "erdemjegy" : 5
+}
+
+###
+
+DELETE {{diakok}}/19
+
+###

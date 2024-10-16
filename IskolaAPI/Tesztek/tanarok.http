@@ -1,0 +1,37 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@tanarok = http://localhost:5000/api/tanarok
+
+GET {{tanarok}}
+
+###
+
+GET {{tanarok}}/1
+
+###
+
+POST {{tanarok}}
+Content-Type: application/json
+
+{
+  "nev": "Teszt Elek",
+  "email" : "elek@teszt.hu",
+  "tantargy" : "Tesztelés"
+}
+
+###
+
+PUT {{tanarok}}/12
+Content-Type: application/json
+
+{
+  "nev": "Teszt Elekné",
+  "email" : "elekne@teszt.hu",
+  "tantargy" : "Tesztelés"
+}
+
+###
+
+DELETE {{tanarok}}/12
+
+###

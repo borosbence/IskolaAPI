@@ -41,24 +41,24 @@ CREATE TABLE `diakok` (
 --
 
 INSERT INTO `diakok` (`id`, `nev`, `email`, `erdemjegy`) VALUES
-(1, 'Csóti István', 'bsze3csoist@vasvari.or', 4),
-(2, 'Erdélyi Dávid', 'bsze3erddav@vasvari.or', 5),
-(3, 'Grezsa Zoltán Gábor', 'bsze3grezol@vasvari.or', 5),
-(4, 'Guba Viktor', 'bsze3gubvik@vasvari.or', 1),
-(5, 'Horváth Péter', 'bsze3horpet@vasvari.or', 2),
-(6, 'Huszka Leila Renáta', 'bsze3huslei@vasvari.or', 5),
-(7, 'Kopincu Máté', 'bsze3kopmat@vasvari.or', 1),
-(8, 'Kovács József Miklós', 'bsze3kovjoz@vasvari.or', 5),
-(9, 'Lajkó Levente', 'bsze3lajlev@vasvari.or', 4),
-(10, 'Márkus Netti Teodóra', 'bsze3marnet@vasvari.or', 4),
-(11, 'Molnár Edit', 'molnar.edit@vasvari.or', 2),
-(12, 'Pécsi Bianka', 'bsze3pecbia@vasvari.or', 2),
-(13, 'Simon Gábor', 'bsze3simgab@vasvari.or', 4),
-(14, 'Székely Levente', 'bsze3szelev@vasvari.or', 4),
-(15, 'Takács András', 'bsze3takand@vasvari.or', 3),
-(16, 'Töröcsik Ákos', 'bsze3torako@vasvari.or', 1),
-(17, 'Varga Gábor', 'bsze3vargab@vasvari.or', 2),
-(18, 'Wittmann Gyula', 'csze2witgyu@vasvari.or', 1);
+(1, 'Csóti István', 'bsze3csoist@vasvari.org', 4),
+(2, 'Erdélyi Dávid', 'bsze3erddav@vasvari.org', 5),
+(3, 'Grezsa Zoltán Gábor', 'bsze3grezol@vasvari.org', 5),
+(4, 'Guba Viktor', 'bsze3gubvik@vasvari.org', 1),
+(5, 'Horváth Péter', 'bsze3horpet@vasvari.org', 2),
+(6, 'Huszka Leila Renáta', 'bsze3huslei@vasvari.org', 5),
+(7, 'Kopincu Máté', 'bsze3kopmat@vasvari.org', 1),
+(8, 'Kovács József Miklós', 'bsze3kovjoz@vasvari.org', 5),
+(9, 'Lajkó Levente', 'bsze3lajlev@vasvari.org', 4),
+(10, 'Márkus Netti Teodóra', 'bsze3marnet@vasvari.org', 4),
+(11, 'Molnár Edit', 'molnar.edit@vasvari.org', 2),
+(12, 'Pécsi Bianka', 'bsze3pecbia@vasvari.org', 2),
+(13, 'Simon Gábor', 'bsze3simgab@vasvari.org', 4),
+(14, 'Székely Levente', 'bsze3szelev@vasvari.org', 4),
+(15, 'Takács András', 'bsze3takand@vasvari.org', 3),
+(16, 'Töröcsik Ákos', 'bsze3torako@vasvari.org', 1),
+(17, 'Varga Gábor', 'bsze3vargab@vasvari.org', 2),
+(18, 'Wittmann Gyula', 'csze2witgyu@vasvari.org', 1);
 
 -- --------------------------------------------------------
 

@@ -14,7 +14,7 @@ namespace IskolaAPI.Models
         public int id { get; set; }
         [StringLength(50)]
         public string nev { get; set; } = null!;
-        [StringLength(22)]
+        [StringLength(23)]
         public string email { get; set; } = null!;
         [Column(TypeName = "smallint(1)")]
         public short erdemjegy { get; set; }

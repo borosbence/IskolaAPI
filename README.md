@@ -11,7 +11,7 @@ A feladat megoldásához használja a következő útmutatókat:
 1. Készítsen adatbázist **iskola** néven, majd hozzon létre benne egy **diakok** táblát a következő mezőkkel:
     - id: int(11), PRIMARY, AI
     - nev: varchar(50)
-    - email: varchar(22), UNIQUE
+    - email: varchar(23), UNIQUE
     - erdemjegy: smallint(1)
 2. Töltse fel a táblát a Forrás mappában lévő **2-14be.xlsx** adataival.
 3. Készítsen egy Web API végpontot `api/Diakok` útvonalon, amelyen a diákok adatait tudja karbantartani.
